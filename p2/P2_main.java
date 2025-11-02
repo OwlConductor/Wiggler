@@ -18,9 +18,7 @@ public class P2_main {
         if(a+b>=c) d++;
         // E4: a + b + c >= 100
         if(a+b+c>=100) d++;
-        // d checkup, only works with Integer[] not with int[] because int is not an object type
-        d = (Arrays.asList(new Integer[]{1,2,3,4}).contains(d)) ? d : 0;
-        // value of d
-        System.out.println(String.valueOf(d));
+        // cli value of d with checkup on value, only works with Integer[] not with int[] because int is not an object type
+        System.out.println((d = (Arrays.asList(new Integer[]{1,2,3,4}).contains(d)) ? d : 0));
     }
 }
