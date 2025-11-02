@@ -5,12 +5,9 @@ import java.lang.Math;
 public class H1_main {
     
     public static void main(String[] args) {
-
         double guthaben = 10;
         double monEingang = 4;
-
         int rating = 0;
-
         boolean warnhinweis = false;
         boolean negativ = false;
 
@@ -23,8 +20,7 @@ public class H1_main {
             } else {
                 // being not even after paycheck
                 rating--;
-                // money and time dependend warning
-                warnhinweis = (rating<0);
+                warnhinweis = (rating<0); // money and cycle(time) dependend warning of depts
             }
         } else if (guthaben > 0) {
             // being in positive
@@ -35,7 +31,6 @@ public class H1_main {
             negativ = false;
             rating+=2;
         }
-        
         System.out.println("Guthaben : "+ guthaben);
         System.out.println("Einkommen : " + monEingang);
         System.out.println("Liquditätsrating : " + rating);
